@@ -51,9 +51,8 @@ PlayerSection:NewButton("Reset WS/JP", "Resets to all defaults", function()
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
 end)
 
-PlayerSection:NewToggle("Q to teleport", "Teleports you when you press Q", function(state)
-    if state then
-        plr = game.Players.LocalPlayer
+PlayerSection:NewButton("Q teleport", "Press Q to teleport", function()
+    plr = game.Players.LocalPlayer
         
         hum = plr.Character.HumanoidRootPart
  
@@ -73,9 +72,6 @@ PlayerSection:NewToggle("Q to teleport", "Teleports you when you press Q", funct
  
         end
         end)
-    else
-        return
-    end
 end)
 
 
@@ -86,7 +82,6 @@ local OtherSection = Other:NewSection("Other")
 OtherSection:NewButton("Chat Spoofer", "Chat as anyone", function()
     loadstring(game:HttpGet(("https://pastebin.com/raw/djBfk8Li"),true))()
 end)
-
 
 
 
