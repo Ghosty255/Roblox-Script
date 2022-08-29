@@ -84,11 +84,11 @@ OtherSection:NewButton("Chat Spoofer", "Chat as anyone", function()
 end)
 
 
-
-local Arsenal = Window:NewTab("Arsenal")
-local ArsenalSection = Arsenal:NewSection("Arsenal")
-
-ArsenalSection:NewButton("Arsenal GUI", "Arsenal Hack GUI", function()
+OtherSection:NewButton("Arsenal GUI", "Arsenal Hack GUI", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/HonestlyDex/DexHub/main/V3.lua"))()
+end)
+
+OtherSection:NewButton("Muder Mystery 2", "MM2 Hack GUI", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Doggo-cryto/EclipseMM2/master/Script", true))()
 end)
 
